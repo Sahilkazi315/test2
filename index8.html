@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        .navbar {
+            height: 60px;
+            background-color: #0f9686;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: 113px;
+        }
+
+        .logo {
+            background-image: url("./eshop_white_logo.png");
+            height: 50px;
+            width: 160px;
+            background-size: cover;
+        }
+
+        .border {
+            border: 1px solid transparent;
+        }
+
+        .border:hover {
+            border: 1px solid #fff;
+        }
+
+        /* Box 2 */
+
+        .address-first {
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 14px;
+        }
+
+        .address-second {
+            font-size: 1rem;
+            margin-left: 30px;
+        }
+
+        .address-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        /* box 3 */
+
+        .nav-search {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 620px;
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .clr p {
+            color: #fff;
+        }
+
+        .clr a {
+            text-decoration: none;
+        }
+
+        .nav-search:hover {
+            border: 3px solid orange;
+        }
+
+        .search-select {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border: none;
+        }
+
+        .search-input {
+            width: 100%;
+            font-size: 0.90rem;
+            border: none;
+        }
+
+        .search-icon {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #0F1111;
+            background-color: #f3f3f3;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        /* box 4 */
+
+        span {
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .nav-second {
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        /* box 6 */
+
+        .nav-cart i {
+            font-size: 26px;
+        }
+
+        .nav-cart {
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+
+        /* pannel */
+
+        .pannel {
+            height: 40px;
+            background-color: #072e33;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .pannel-ops p {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .pannel-ops {
+            width: 70%;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-left: 30px;
+        }
+
+        .pannel-all {
+            cursor: pointer;
+        }
+
+
+        /* img section */
+
+        .container {
+            width: 100%;
+        }
+
+        .content-container {
+            margin-left: 50px;
+        }
+
+        .imgorcontent {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .img-container img {
+            margin-left: 20px;
+            max-width: 500px;
+        }
+
+        .samecolor {
+            text-decoration: none;
+            color: #3db7cc;
+        }
+
+        .content-container i {
+            color: #ffa41c;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .content-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .samecolor {
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+        }
+
+        .addCard {
+            margin-left: 50px;
+            border: 0.8px solid rgb(193, 192, 192);
+            height: 450px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+
+            margin-right: 10px;
+        }
+
+        .gap {
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+
+        #price {
+            font-size: 20px;
+        }
+
+        .content-container ul li {
+            font-size: 0.85rem;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+
+        #fontsize {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 17px;
+            color: green;
+        }
+
+        #ptag {
+            font-size: 0.85rem;
+            line-height: 20px;
+        }
+
+        .btn {
+            height: 32px;
+            width: 165px;
+            margin-top: 25px;
+            border-radius: 30px;
+            outline: 0;
+            border: 0;
+            background-color: #ffa41c;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        #changebtncolor {
+            background-color: rgb(255, 221, 0);
+        }
+
+        .sameh {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .addCard a {
+            text-decoration: none;
+            margin-left: 8px;
+            color: #3db7cc;
+        }
+
+        .sameh {
+            font-size: 0.85rem;
+            line-height: 20px;
+        }
+
+        #bold {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #chngclr {
+            text-decoration: none;
+            color: red;
+            margin-right: 5px;
+        }
+
+        #hidden {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="address-first">Deliver to</p>
+            <div class="address-icon">
+                <i class=""></i>
+                <p class="address-second">India</p>
+            </div>
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search E-shop" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-singin border clr">
+            <a href="index1.html">
+                <p><span>Hello,signin</span></p>
+                <p class="nav-second">Account & List</p>
+            </a>
+        </div>
+
+        <div class="nav-return border clr">
+            <a href="index1.html">
+                <p><span>Return</span></p>
+                <p class="nav-second">& Oreders</p>
+            </a>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+
+    <div class="pannel">
+        <div class="pannel-all border" id="open">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="pannel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="imgorcontent">
+            <div class="img-container">
+                <img src="./watch.jpg" alt="">
+            </div>
+            <div class="content-container">
+                <h2>EURANS Smart Watch 41mm, Full Touchscreen Smartwatch, Heart Rate Monitor & SpO2, IP68 Waterproof Pedometer Watch for Men</h2>
+                <a class="samecolor" href="#">Visit the EURANS Store</a><br>
+                4.7<i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-angle-down" style="color:black"></i>
+                <p class="samecolor">6,245 rating | 51 costomer images</p>
+                <a id="chngclr" href="#">#1 Best Seller</a> <a class="samecolor" href="#"></a><br>
+                <h3 class="gap" id="price">$19.99</h3>
+                <p class="gap" id="hidden">List Price: $44.99</p><br>
+                <p class="gap">$58.30 Shipping & Import Fees Deposit to India Details<br>
+                    Available at a lower price from other sellers that may not offer free Prime shipping.</p>
+                <ul>
+                    <li>This first desk for little ones features a laptop, phone, globe and more with 27 electronic
+                        touch points for exciting imitative play</li>
+                    <li>Play in Explore, Learn and Music modes to hear first words, greetings and music from around the
+                        world and role-play conversations with Scout</li>
+                    <li>Open the laptop and start working on learning shapes and animals by pressing the buttons to
+                        reveal animals on the screen</li>
+                    <li>Hear ten songs and greetings from around the world by spinning the light-up globe</li>
+                    <li>Fully bilingual in English and Spanish, hear more than 180 songs, melodies, sounds and phrases
+                    </li>
+                </ul>
+            </div>
+
+            <div class="addCard">
+                <p id="bold">$19.99</p>
+                <p class="sameh">$58.30 Shipping & Import Fees Deposit to India Details $38.06 delivery</p>
+                <i class="fa-solid fa-location-dot"></i><a href="#">Deliver to india</a>
+                <p id="fontsize"></p>
+                <p id="ptag">We are working hard to be back in stock. Place your order and we’ll email you when we have
+                    an estimated delivery date. You won’t be charged until the item ships.</p>
+
+                <button class="btn" id="changebtncolor">Add cart</button>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
